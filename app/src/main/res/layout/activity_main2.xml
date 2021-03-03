@@ -8,41 +8,41 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="245dp"
-        android:layout_height="122dp"
+        android:layout_width="247dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="8dp"
         android:background="#40AE19"
         android:gravity="center"
         android:text="Lyndsey \n I like Cacti"
         android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="232dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="16dp"
+        android:background="#AE3884AE"
+        android:text="Joe's Page"
+        android:textSize="30sp"
+        app:backgroundTint="#0288D1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="332dp"
-        android:layout_height="310dp"
+        android:layout_width="289dp"
+        android:layout_height="322dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/avatar" />
-
-    <Button
-android:id="@+id/button2"
-android:layout_width="189dp"
-android:layout_height="80dp"
-android:background="#AE3884AE"
-android:text="Next"
-android:textSize="48sp"
-app:backgroundTint="#0288D1"
-app:layout_constraintBottom_toBottomOf="@+id/textView"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toTopOf="@+id/imageView3"
-app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cactus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
