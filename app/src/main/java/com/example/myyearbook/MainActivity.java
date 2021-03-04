@@ -16,17 +16,24 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
-private Button button;
-private Button button4;      //Share button
-private ImageView imageFlag;    //image that is shared
+    private Button button;
+    private Button button5;
+    private Button button4;      //Share button
+    private ImageView imageFlag;    //image that is shared
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        button5 = (Button) findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWebView();
+            }
+        });
         imageFlag = findViewById(R.id.imageView);   //flag picture
-
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +41,6 @@ private ImageView imageFlag;    //image that is shared
                 openActivity2();
             }
         });
-
         button4 = (Button) findViewById(R.id.button4);           //share the image
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,15 +49,19 @@ private ImageView imageFlag;    //image that is shared
             }
         });
     }
+    public void openWebView() {
+        Intent intent = new Intent(this, google.class);
+        startActivity(intent);
+    }
 
     public void openActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, MainActivity2.class);
+        startActivity(intent2);
         }
 
     public void openActivity() {      //code to go to main page (joe's page)
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Intent intent3 = new Intent(this, MainActivity.class);
+        startActivity(intent3);
     }
 
     public void shareButton2() {           //Code to allow image sharing

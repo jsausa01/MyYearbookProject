@@ -25,7 +25,7 @@ private ImageView image;        // Image that is shared
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        image = findViewById(R.id.cactus);        //cactus picture
+
 
         button2 = (Button) findViewById(R.id.button2);            // go to Joe's page
         button2.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ private ImageView image;        // Image that is shared
             }
         });
 
-        button3 = (Button) findViewById(R.id.button3);           //share the image
+        button3 = (Button) findViewById(R.id.button4);           //share the image
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
